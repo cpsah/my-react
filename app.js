@@ -1,17 +1,27 @@
-const heading = React.createElement("header", {
+/**
+ *
+ *
+ */
+import { createElement } from "react";
+import ReactDOM from "react-dom/client"; // client is added in react 18 version
+
+const heading = createElement("header", {
     id: 'head',
+    key: 'header-section',
     class: 'test'
-}, 'header section');
-const body = React.createElement("section", {
+}, 'header section from parcel');
+const body = createElement("section", {
     id: 'bodySection',
+    key: 'body-section',
     class: 'content'
 }, 'My content area');
-const container = React.createElement("div", {
+const container = createElement("div", {
     id: 'container',
+    key: 'container-section',
     class: 'container'
 }, [heading, body]);
-    
-// console.log(heading);
+
+console.log(heading);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // passing a react element inside the root
