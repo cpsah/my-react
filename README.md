@@ -26,7 +26,9 @@
   - Tree Shaking  - Removing unwanted code
 ### browserlist
   - // it will definitely work on chrome
-
+### Babel [Babel · The compiler for next generation JavaScript] (https://babeljs.io/)
+  - It is a html like syntax
+  - Babel comes along with parcel
 ### NOTE
 - anything geneerated by server should present in .gitignore and should not push to github
 - Transitive Dependencies
