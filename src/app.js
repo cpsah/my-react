@@ -10,14 +10,14 @@
           - image
           - name
           - rating
-          - cuisine        
+          - cuisine
     Footer
       - links
       - copyright
 */
 import React from "react";
 import ReactDOM from "react-dom/client"; // client is added in react 18 version
-
+import { Header } from './components/Header';
 // JSX , contains html like syntax
 /**
  * JSX => React.createElement => Object => HTML(DOM)
@@ -60,11 +60,11 @@ const HeaderComponentTest = () => {
       {
         // Witting comment in JS
         /**
-         *         multi line comment 
+         *         multi line comment
          * JSX/javascript/ES6 is not mandatory
          * <Heading /> => self closing tag
          */
-        
+
       }
       <h1>my first functional component</h1>
     </div>
@@ -106,7 +106,7 @@ const restrautList = [
       },
       cityState: "22",
       address:
-        "KFC Restaurant, Khasra No 1281/1291, Opp Dr Manish Jain hospital, Chakrata road, Dehradun-248001",
+        'KFC Restaurant, Khasra No 1281/1291, Opp Dr Manish Jain hospital, Chakrata road, Dehradun-248001',
       locality: "Clock Tower",
       parentId: 547,
       unserviceable: false,
@@ -831,30 +831,6 @@ const RestrauntCard = ({
   );
 };
 
-const Title = () => (
-  <a href="/">
-    <img
-      className="logo"
-      alt="Food Villa"
-      src="https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
-    />
-  </a>
-);
-const Header = () => {
-  return (
-    <div className="header">
-      <Title />
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </div>      
-    </div>
-  );
-}
 const Body = () => {
   return (
     <div className="restaurant-list">
